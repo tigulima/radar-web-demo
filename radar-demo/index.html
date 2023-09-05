@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Radar</title>
+        <link rel="icon" href="assets/favicon.svg" type="image/x-icon" />
+
+        <script type="module" src="app.js"></script>
+
+        <!-- Optional, for analytics -->
+        <!-- <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js"></script> -->
+
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link rel="manifest" href="/manifest.json" /> -->
+
+        <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+    </head>
+    <body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0">
+        <!-- Device info -->
+        <div class="login-container">
+            <h1 style="color: var(--light); align-self: center; margin: 25%">Login</h1>
+            <form id="signup-form" style="display: grid">
+                <input class="login-input" type="email" id="signup-email" placeholder="Email" />
+                <input class="login-input" type="password" id="signup-password" placeholder="Password" />
+                <a class="support-btn">Suporte</a>
+                <button class="login-btn" type="submit">Entrar</button>
+            </form>
+
+            <!-- <input class="login-input" placeholder="Email"></input>
+            <input class="login-input" placeholder="Senha"></input>
+            <a class="login-btn" href="./pages/home.html">Entrar</a> -->
+        </div>
+    </body>
+</html>

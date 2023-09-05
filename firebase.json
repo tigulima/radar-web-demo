@@ -1,0 +1,6 @@
+{
+    "hosting": {
+        "public": "radar-demo",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    }
+}

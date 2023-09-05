@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://10.0.0.33" /> -->
+
+        <title>Radar</title>
+        <link rel="icon" href="../assets/favicon.svg" type="image/x-icon" />
+
+        <script type="module" src="../app.js"></script>
+
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="manifest" href="../manifest.json" />
+
+        <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="row" style="justify-content: start; margin: 0 3rem 0 1rem">
+            <h1 class="header-title">Porta</h1>
+        </div>
+
+        <div class="card-grid">
+            <div class="card" style="background-color: var(--light)">
+                <div class="row">
+                    <div style="flex: 1; align-self: baseline">
+                        <h3 class="card-title">Porta</h3>
+                        <p>Ative ou desative a sirene ativada na abertura da porta do dispositivo</p>
+                    </div>
+
+                    <div class="card-side-buttons">
+                        <div class="card-pill">configuração</div>
+                    </div>
+                </div>
+                <div
+                    style="
+                        display: flex;
+                        justify-content: space-between;
+                        border-top-style: solid;
+                        border-width: 1px;
+                        border-color: var(--grey-light-1);
+                        padding-top: 5px;
+                    "
+                >
+                    <p>Alarme da porta</p>
+                    <label class="switch">
+                        <input id="port_switch" type="checkbox" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div
+                    class="row"
+                    style="
+                        display: flex;
+                        justify-content: space-between;
+                        border-top-style: solid;
+                        border-width: 1px;
+                        border-color: var(--grey-light-1);
+                        padding-top: 5px;
+                    "
+                >
+                    <p>Pagina da PopProtect</p>
+                    <a target="_blank" href="http://10.0.0.33/alarme.htm?op=0&ativar=true&tdisp=10&trearm=5&trele=0">on</a>
+                    <a target="_blank" href="http://10.0.0.33/alarme.htm?op=0&ativar=false&tdisp=10&trearm=5&trele=0">off</a>
+                </div>
+            </div>
+            <div class="card" style="background-color: var(--light)">
+                <div class="card-side-buttons">
+                    <div class="card-pill">logs</div>
+                </div>
+                <div id="log"></div>
+            </div>
+        </div>
+        <!-- Cards -->
+    </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Radar</title>
+        <link rel="icon" href="../assets/favicon.svg" type="image/x-icon" />
+
+        <script src="../app.js"></script>
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="manifest" href="../manifest.json" />
+
+        <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Search box -->
+        <div class="row center" style="padding-top: 4rem">
+            <input class="search-box" type="text" placeholder="Search" />
+            <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                    <path
+                        d="M21.414,18.586c-0.287-0.287-1.942-1.942-2.801-2.801c-0.719,1.142-1.686,2.109-2.828,2.828 c0.859,0.859,2.514,2.514,2.801,2.801c0.781,0.781,2.047,0.781,2.828,0C22.195,20.633,22.195,19.367,21.414,18.586z"
+                        fill="#EFA949"
+                    />
+                    <circle cx="11" cy="11" r="9" opacity=".35" fill="#EFA949" />
+                </svg>
+            </div>
+            <a class="config-box" href="./config.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28px" height="28px">
+                    <path
+                        d="M16,18.928c0.678-0.391,1.459-0.424,2.135-0.164c0.564,0.217,1.209,0.037,1.592-0.43 c0.683-0.833,1.234-1.778,1.621-2.805c0.221-0.587,0.012-1.232-0.467-1.638C20.342,13.437,20,12.761,20,12 c0-0.761,0.342-1.437,0.88-1.893c0.479-0.406,0.689-1.05,0.467-1.638c-0.387-1.026-0.937-1.972-1.621-2.805 c-0.383-0.467-1.028-0.647-1.592-0.43C17.459,5.496,16.678,5.463,16,5.072c-0.68-0.393-1.1-1.056-1.21-1.775 c-0.09-0.588-0.556-1.058-1.143-1.158C13.111,2.048,12.561,2,12,2s-1.111,0.048-1.647,0.139C9.766,2.239,9.301,2.709,9.21,3.297 C9.1,4.016,8.68,4.679,8,5.072C7.322,5.463,6.541,5.496,5.865,5.235c-0.564-0.217-1.209-0.037-1.592,0.43 C3.59,6.498,3.04,7.443,2.653,8.47C2.431,9.057,2.641,9.702,3.12,10.107C3.658,10.563,4,11.239,4,12c0,0.761-0.342,1.437-0.88,1.893 c-0.479,0.406-0.689,1.05-0.467,1.638c0.387,1.026,0.937,1.972,1.621,2.805c0.383,0.467,1.028,0.647,1.592,0.43 C6.541,18.504,7.322,18.537,8,18.928c0.68,0.393,1.1,1.056,1.21,1.775c0.09,0.588,0.556,1.058,1.143,1.158 C10.889,21.952,11.439,22,12,22s1.111-0.048,1.647-0.139c0.587-0.099,1.053-0.569,1.143-1.158C14.9,19.984,15.32,19.321,16,18.928z"
+                        opacity=".35"
+                        fill="#F2F2F2"
+                    />
+                    <path d="M12,8c-2.209,0-4,1.791-4,4s1.791,4,4,4s4-1.791,4-4S14.209,8,12,8z" fill="#F2F2F2" />
+                </svg>
+            </a>
+        </div>
+        <!-- Header -->
+        <div class="row" style="justify-content: start; margin: 0 3rem 0 1rem">
+            <h1 class="header-title">Início</h1>
+            <div class="v-divider"></div>
+            <p class="header-text">acesso em dd/mm/aa às hh/mm</p>
+        </div>
+        <!-- Device info -->
+        <div class="card" style="height: 200px">
+            <div class="row" style="height: 100%">
+                <div style="flex: 1; align-self: baseline">
+                    <div class="row">
+                        <h3 class="card-title">Radar #1</h3>
+                        <p style="font-size: 12px; color: var(--grey); margin: 0; padding-top: 8px">av. desembargador mota, 312</p>
+                    </div>
+                    <p>Contrato tal de numsei quem</p>
+                    <ul>
+                        <li>Ativado em dd/mm/aa</li>
+                        <li>Instalado por Fulano de Tal</li>
+                        <li>Última perícia por Fulano de Tal</li>
+                    </ul>
+                </div>
+
+                <div class="card-side-buttons">
+                    <div class="card-pill">card</div>
+                    <div class="card-round-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                            <path
+                                d="M7.121,6.879c-1.171-1.172-3.071-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l7,7 C10.465,18.707,11.232,19,12,19v-7.243L7.121,6.879z"
+                                opacity=".35"
+                                fill="#202026"
+                            />
+                            <path
+                                d="M21.121,11.121C21.707,10.536,22,9.768,22,9s-0.293-1.536-0.879-2.121c-1.171-1.172-3.071-1.172-4.242,0L12,11.757V19 c0.768,0,1.535-0.293,2.121-0.879L21.121,11.121z"
+                                fill="#202026"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dot-divider" style="max-width: auto"></div>
+
+        <!-- Cards -->
+
+        <div class="card-grid">
+            <div class="card" style="background-color: var(--jade)">
+                <div class="row">
+                    <div style="flex: 1; align-self: baseline">
+                        <h3 class="card-title">Porta</h3>
+                        <p>Configure a ação da sirene caso a porta do dispositivo seja aberta</p>
+                    </div>
+                    <div class="card-side-buttons">
+                        <div class="card-pill">pagina</div>
+                    </div>
+                </div>
+                <a class="page-card-bg" href="./ports.html">
+                    <p style="margin: 0 10px 0 10px">Ir à página</p>
+                    <div class="page-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                            <path
+                                d="M6.879,7.121c-1.172-1.171-1.172-3.071,0-4.242c1.171-1.172,3.071-1.172,4.242,0l7,7 C18.707,10.465,19,11.232,19,12h-7.243L6.879,7.121z"
+                                opacity=".35"
+                                fill="#202026"
+                            />
+                            <path
+                                d="M11.121,21.121C10.536,21.707,9.768,22,9,22s-1.536-0.293-2.121-0.879c-1.172-1.171-1.172-3.071,0-4.242L11.757,12H19 c0,0.768-0.293,1.535-0.879,2.121L11.121,21.121z"
+                                fill="#202026"
+                            />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card" style="background-color: var(--coral)">
+                <div class="row">
+                    <div style="flex: 1; align-self: baseline">
+                        <h3 class="card-title">Fonte</h3>
+                        <p>Monitore e gerencie a fonte de alimentação e no break do dispositivo</p>
+                    </div>
+
+                    <div class="card-side-buttons">
+                        <div class="card-pill">pagina</div>
+                    </div>
+                </div>
+                <a class="page-card-bg">
+                    <p style="margin: 0 10px 0 10px">Ir à página</p>
+                    <div class="page-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                            <path
+                                d="M6.879,7.121c-1.172-1.171-1.172-3.071,0-4.242c1.171-1.172,3.071-1.172,4.242,0l7,7 C18.707,10.465,19,11.232,19,12h-7.243L6.879,7.121z"
+                                opacity=".35"
+                                fill="#202026"
+                            />
+                            <path
+                                d="M11.121,21.121C10.536,21.707,9.768,22,9,22s-1.536-0.293-2.121-0.879c-1.172-1.171-1.172-3.071,0-4.242L11.757,12H19 c0,0.768-0.293,1.535-0.879,2.121L11.121,21.121z"
+                                fill="#202026"
+                            />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card" style="background-color: var(--lavander)">
+                <div class="row">
+                    <div style="flex: 1; align-self: baseline">
+                        <h3 class="card-title">Camera</h3>
+                        <p>Descrição da página que este card leva ou a função que ele exerce.</p>
+                    </div>
+
+                    <div class="card-side-buttons">
+                        <div class="card-pill">pagina</div>
+                    </div>
+                </div>
+                <a class="page-card-bg">
+                    <p style="margin: 0 10px 0 10px">Ir à página</p>
+                    <div class="page-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                            <path
+                                d="M6.879,7.121c-1.172-1.171-1.172-3.071,0-4.242c1.171-1.172,3.071-1.172,4.242,0l7,7 C18.707,10.465,19,11.232,19,12h-7.243L6.879,7.121z"
+                                opacity=".35"
+                                fill="#202026"
+                            />
+                            <path
+                                d="M11.121,21.121C10.536,21.707,9.768,22,9,22s-1.536-0.293-2.121-0.879c-1.172-1.171-1.172-3.071,0-4.242L11.757,12H19 c0,0.768-0.293,1.535-0.879,2.121L11.121,21.121z"
+                                fill="#202026"
+                            />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
