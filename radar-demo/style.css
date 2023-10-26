@@ -44,6 +44,14 @@ body {
     font-family: Inter;
 }
 
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 .login-container {
     max-width: 500px;
     width: 100%;
@@ -66,6 +74,12 @@ body {
     box-sizing: border-box;
     padding: 0 35px 0 35px;
     margin-bottom: 32px;
+}
+
+.login-title {
+    color: var(--light);
+    align-self: center;
+    margin: 25%;
 }
 
 .login-btn {
